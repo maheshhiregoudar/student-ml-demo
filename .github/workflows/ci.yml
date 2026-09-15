@@ -31,11 +31,11 @@ jobs:
 
       - name: Train Model
         run: |
-          python scr/train.py
+          python src/train.py
 
       - name: Test Prediction
         run: |
-          python scr/predict.py
+          python src/predict.py
 
       - name: Upload Model 
         uses: actions/upload-artifact@v4
